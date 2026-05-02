@@ -16,16 +16,11 @@
   --font-body: 'Inter', sans-serif;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
   overflow-x: hidden;
-  cursor: none;
   -webkit-font-smoothing: antialiased;
 }
 
