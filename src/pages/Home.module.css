@@ -1,3 +1,11 @@
 .main {
-  /* no top padding — we own the full viewport */
+  position: relative;
+  height: 2000px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
 }
