@@ -21,7 +21,7 @@ export function LoadingOverlay() {
   const isDone = minTimerDone && (vals.length === 0 || vals.every(p => p >= 1))
 
   useEffect(() => {
-    initMusic('/sounds/Cinematic Percussion Kick.mp3')
+    initMusic('sounds/Cinematic Percussion Kick.mp3')
   }, [])
 
   useEffect(() => {
@@ -51,7 +51,7 @@ export function LoadingOverlay() {
   }, [isDone])
 
   function handleEnter() {
-    const music = new Howl({ src: ['/sounds/SoundReality Boom 3.mp3'], volume: 1, loop: false })
+    const music = new Howl({ src: ['sounds/SoundReality Boom 3.mp3'], volume: 1, loop: false })
     music.play()
     gsap.delayedCall(0.8, () => {
       playMusic()

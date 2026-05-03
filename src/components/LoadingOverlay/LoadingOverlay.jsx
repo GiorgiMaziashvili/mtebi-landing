@@ -22,7 +22,7 @@ export function LoadingOverlay() {
 
   // Pre-init Howl as early as possible (still muted / not playing yet)
   useEffect(() => {
-    initMusic('/sounds/Cinematic Percussion Kick.mp3')
+    initMusic('sounds/Cinematic Percussion Kick.mp3')
   }, [])
 
   // Simulate fill when no real loaders are registered
@@ -54,7 +54,7 @@ export function LoadingOverlay() {
   }, [isDone])
 
   function handleEnter() {
-    const music = new Howl({ src: ['/sounds/SoundReality Boom 3.mp3'], volume: 1, loop:false })
+    const music = new Howl({ src: ['sounds/SoundReality Boom 3.mp3'], volume: 1, loop:false })
     music.play()
     gsap.delayedCall(0.8,()=>{
       playMusic()
